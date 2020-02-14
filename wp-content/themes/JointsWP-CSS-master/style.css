@@ -1,0 +1,94 @@
+/******************************************************************
+Theme Name: JointsWP - CSS
+Theme URI: http://www.jointswp.com
+Description: 
+Author: Ellam Fox
+Author URI: http://www.yoururlhere.com
+Version: 5.0
+License: GNU General Public License & MIT
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: css
+******************************************************************/
+
+i {
+    font-size: 30px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+.top-bar-left {
+    margin-left:200px;
+}
+.top-bar-right{
+    margin-right:200px;
+}
+
+.content{
+    margin-left:200px;
+    margin-right:200px;
+}
+
+body {
+    padding: 2rem 1rem;
+  }
+  
+.docs-example-orbit-slide {
+    padding: 2rem 4rem;
+    color: white;
+}
+.orbit-slide:nth-of-type(1) .docs-example-orbit-slide {
+    background: dodgerblue;
+}
+.orbit-slide:nth-of-type(2) .docs-example-orbit-slide {
+    background: rebeccapurple;
+}
+.orbit-slide:nth-of-type(3) .docs-example-orbit-slide {
+    background: darkgoldenrod;
+}
+.orbit-slide:nth-of-type(4) .docs-example-orbit-slide {
+    background: lightseagreen;
+}
+  
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    align-items:center;
+    border-color: white;
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer { 
+    background: slategrey;
+    color: white;
+  }
+
+
+
+    .social-link{
+        color: white;
+    }
