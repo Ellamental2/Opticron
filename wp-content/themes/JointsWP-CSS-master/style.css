@@ -13,6 +13,24 @@ Tags: css
 i {
     font-size: 30px;
 }
+.body{
+    align-items:center;
+    text-align:center;
+    margin:auto;
+}
+.content{
+    
+    text-align:center;
+    
+}
+
+
+.specials{
+    background-color: lightgrey;
+    align-items:center;
+    text-align:center;
+    
+}
 
 a {
     color: inherit;
@@ -20,18 +38,21 @@ a {
 } 
 
 .top-bar-left {
-    margin-left:200px;
+    margin-left:400px;
 }
 .top-bar-right{
-    margin-right:200px;
+    margin-right:400px;
 }
 
 .content{
-    margin-left:200px;
-    margin-right:200px;
+    margin-left:400px;
+}
+.specials{
+    margin-left:500px;
+    width: fit-content;
 }
 
-body {
+.body {
     padding: 2rem 1rem;
   }
   
@@ -67,8 +88,7 @@ body {
   /* Style the counter cards */
   .card {
     align-items:center;
-    border-color: white;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     background-color: white;
   }
@@ -83,7 +103,7 @@ body {
   }
 
   .footer { 
-    background: slategrey;
+    background: grey;
     color: white;
   }
 

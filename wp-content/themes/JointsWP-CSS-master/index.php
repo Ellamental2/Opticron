@@ -8,11 +8,9 @@
  */
 
 get_header(); ?>
-
-<div class = "row">
-	<div class="columns">
-		SLIDER GO HERE
-		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+<div class="body">
+	<div class = "slider" style="height:450px">
+		<div class="orbit" role="region" aria-label="Opticron Slider" data-orbit>
 
 			<div class="orbit-wrapper">
 				<div class="orbit-controls">
@@ -53,115 +51,118 @@ get_header(); ?>
 				<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
 			</nav>
 		</div>
-	</div>
-</div>
-
-
-			
-	
-<div class="content">
-
-	<div class="inner-content grid-x grid-margin-x grid-padding-x">
-
-		<main class="main small-12 medium-8 large-8 cell" role="main">
-			<div class="row">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<div class="column">
-					<div class="card" style="width: 300px;">
-						<img src="<?php the_field('thumbnail'); ?>">
-						<div class="card-section">
-							<h4><a href="#0" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-							<p><?php the_excerpt(); ?></p>
-						</div>
-					</div>
-				</div>
-				
-			<?php endwhile; ?>	
-				<div class="column">
-					<?php joints_page_navi(); ?>
-				</div>
-			<?php else : ?>
-				<div class="column">
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
-				</div>	
-			<?php endif; ?>
-			</div>																				
-		</main> <!-- end #main -->
-		
-		<?php get_sidebar(); ?>
-
-	</div> <!-- end #inner-content -->
-
-	<section class="specials">
-	<div class="inner-content grid-x grid-margin-x grid-padding-x">
-
-		<?php $homepageOffers = new WP_Query(array(
-			'posts_per_page' => 3,
-			'post_type' => 'Special Offers'
-		)); ?>
-
-		<main class="main small-12 medium-8 large-8 cell" role="main">
-			<div class="row">
-			<?php if ($homepageOffers->have_posts()) : while ($homepageOffers->have_posts()) : $homepageOffers->the_post(); ?>
-				<div class="column">
-					<div class="card" style="width: 300px;">
-						<img src="<?php the_field('thumbnail'); ?>">
-						<div class="card-section">
-							<h4><a href="#0" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-							<p><?php the_excerpt(); ?></p>
-						</div>
-					</div>
-				</div>
-				
-			<?php endwhile; ?>	
-				<div class="column">
-					<?php joints_page_navi(); ?>
-				</div>
-			<?php else : ?>
-				<div class="column">
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
-				</div>	
-			<?php endif; ?>
-	</div>																				
-		</main> <!-- end #main -->
-			</section>
-		
-		
-	<section class="categories">
-	<div class="inner-content grid-x grid-margin-x grid-padding-x">
-
-		<?php $homepageCategories = new WP_Query(array(
-        'post_type' => 'Product Categories'
-		)); ?>
-
-		<main class="main small-12 medium-8 large-8 cell" role="main">
-			<div class="row">
-			<?php if ($homepageCategories->have_posts()) : while ($homepageCategories->have_posts()) : $homepageCategories->the_post(); ?>
-				<div class="column">
-					<div class="card" style="width: 300px;">
-						<img src="<?php the_field('thumbnail'); ?>">
-						<div class="card-section">
-							<h4><a href="#0" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
-						</div>
-					</div>
-				</div>
-				
-			<?php endwhile; ?>	
-				<div class="column">
-					<?php joints_page_navi(); ?>
-				</div>
-			<?php else : ?>
-				<div class="column">
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
-				</div>	
-			<?php endif; ?>
 	</div>		
 
-<?php get_sidebar(); ?>
+	<br><br><br><br>		
+		
+	<div class="content">
 
-</div> <!-- end #inner-content -->
-    </section>
+		<div class="inner-content grid-x grid-margin-x grid-padding-x">
 
-</div> <!-- end #content -->
+			<main class="main small-12 medium-8 large-8 cell" role="main">
+				<div class="row">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<div class="column">
+						<div class="card" style="width: 300px;">
+							<div class="card-section">
+								<h4><a href="#0" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+								<img src="<?php the_field('thumbnail'); ?>">
+								<p><?php the_excerpt(); ?></p>
+							</div>
+						</div>
+					</div>
+					
+				<?php endwhile; ?>	
+					<div class="column">
+						<?php joints_page_navi(); ?>
+					</div>
+				<?php else : ?>
+					<div class="column">
+						<?php get_template_part( 'parts/content', 'missing' ); ?>
+					</div>	
+				<?php endif; ?>
+				</div>																				
+			</main> <!-- end #main -->
+			
+			<?php get_sidebar(); ?>
+
+		</div> <!-- end #inner-content -->
+
+		<section class="specials">
+
+			<div class="subtitle">
+				<h1>Special Offers</h1>
+			</div>
+
+			<div class="inner-content grid-x grid-margin-x grid-padding-x">
+				
+				<?php $homepageOffers = new WP_Query(array(
+					'posts_per_page' => 3,
+					'post_type' => 'Special Offers'
+				)); ?>
+
+				<main class="main small-12 medium-8 large-8 cell" role="main">
+					<div class="row">
+					<?php if ($homepageOffers->have_posts()) : while ($homepageOffers->have_posts()) : $homepageOffers->the_post(); ?>
+						<div class="column">
+							<div class="card" style="width: 300px;">
+								<img src="<?php the_field('thumbnail'); ?>">
+								<div class="card-section">
+									<p><a href="#0" title="<?php the_title(); ?>"><?php the_title(); ?></a></p>
+									<p><strong><?php the_excerpt(); ?></strong></p>
+								</div>
+							</div>
+						</div>
+						
+					<?php endwhile; ?>	
+						<div class="column">
+							<?php joints_page_navi(); ?>
+						</div>
+					<?php else : ?>
+						<div class="column">
+							<?php get_template_part( 'parts/content', 'missing' ); ?>
+						</div>	
+					<?php endif; ?>
+				</main> <!-- end #main -->
+			</div>		
+		</section>
+			
+			
+		<section class="categories">
+			<div class="inner-content grid-x grid-margin-x grid-padding-x">
+
+				<?php $homepageCategories = new WP_Query(array(
+				'post_type' => 'Product Categories'
+				)); ?>
+
+				<main class="main small-12 medium-8 large-8 cell" role="main">
+					<div class="row">
+						<?php if ($homepageCategories->have_posts()) : while ($homepageCategories->have_posts()) : $homepageCategories->the_post(); ?>
+							<div class="column">
+								<div class="card" style="width: 300px;">
+									<img src="<?php the_field('thumbnail'); ?>">
+									<div class="card-section">
+										<h4><a href="#0" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+									</div>
+								</div>
+							</div>
+							
+						<?php endwhile; ?>	
+							<div class="column">
+								<?php joints_page_navi(); ?>
+							</div>
+						<?php else : ?>
+							<div class="column">
+								<?php get_template_part( 'parts/content', 'missing' ); ?>
+							</div>	
+						<?php endif; ?>
+					</div>
+				</main>
+			</div> <!-- end #inner-content -->			
+		</section>
+
+	</div> <!-- end #content -->
+
+</div>
 
 <?php get_footer(); ?>
