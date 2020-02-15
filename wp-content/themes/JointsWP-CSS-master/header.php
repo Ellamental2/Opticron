@@ -40,7 +40,7 @@
 	<header class="header" role="banner">
 	<div class="top-bar">
 		<div class="top-bar-left">
-			<img src="/wp-content/themes/JointsWP-CSS-master/assets/images/header-logo.png">
+			<img src="wp-content/themes/JointsWP-CSS-master/assets/images/header-logo.png" alt="Opticron">
 		</div>
 	</div>
 	<div class="top-bar">
