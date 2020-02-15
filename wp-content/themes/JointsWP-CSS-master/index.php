@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div class="body">
-	<div class = "slider" style="height:450px">
+	<div class = "slider">
 		<div class="orbit" role="region" aria-label="Opticron Slider" data-orbit>
 
 			<div class="orbit-wrapper">

@@ -40,7 +40,7 @@
 	<header class="header" role="banner">
 	<div class="top-bar">
 		<div class="top-bar-left">
-			<img src="https://lh3.googleusercontent.com/proxy/R_pBdrTVESsGp5us1d5TvnW8wShaMWPKQ569DbVlA-Kro2Cty_2KlKd8l8NkBedQss_B7wYpO6SexlzswMdbqwU0f0EYXYm5ihdR2_0nVA89nvTUIRlnFNM_yHcSkkq7YhPgk1Jz3TPE" alt="Opticron" style="width:200px;height:45px;">
+			<img src="/wp-content/themes/JointsWP-CSS-master/assets/images/header-logo.png">
 		</div>
 	</div>
 	<div class="top-bar">
