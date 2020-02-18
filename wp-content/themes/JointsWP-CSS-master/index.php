@@ -9,36 +9,38 @@
 
 get_header(); ?>
 <div class="body">
+		
 	<div class = "slider">
 		<div class="orbit" role="region" aria-label="Opticron Slider" data-orbit>
 
 			<div class="orbit-wrapper">
+				<div class="preloader"></div>
+				<ul data-orbit="">
+					<li class="is-active orbit-slide">
+						<figure class="orbit-figure">
+							<img class="orbit-image" style="height:400px" src="http://localhost/opticron/wp-content/uploads/2020/02/Desktop_Easy-Resize.com_.jpg" alt="bench">
+						</figure>
+					</li>
+					<li class="orbit-slide">
+						<figure class="orbit-figure">
+							<img class="orbit-image" style="height:400px" src="http://localhost/opticron/wp-content/uploads/2020/02/owl.jpg" alt="Owl">
+						</figure>
+					</li>
+					<li class="orbit-slide">
+						<figure class="orbit-figure">
+							<img class="orbit-image" style="height:400px" src="http://localhost/opticron/wp-content/uploads/2020/02/swans.jpg" alt="Swans">
+						</figure>
+					</li>
+					<li class="orbit-slide">
+						<figure class="orbit-figure">
+							<img class="orbit-image" style="height:400px" src="http://localhost/opticron/wp-content/uploads/2020/02/50-years.jpg" alt="50 Years">
+						</figure>
+					</li>
+				</ul>
 				<div class="orbit-controls">
 					<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
 					<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 				</div>
-				<ul class="orbit-container">
-					<li class="is-active orbit-slide">
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="http://localhost/opticron/wp-content/uploads/2020/02/Desktop_Easy-Resize.com_.jpg" alt="bench">
-						</figure>
-					</li>
-					<li class="orbit-slide">
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="http://localhost/opticron/wp-content/uploads/2020/02/owl.jpg" alt="Owl">
-						</figure>
-					</li>
-					<li class="orbit-slide">
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="http://localhost/opticron/wp-content/uploads/2020/02/swans.jpg" alt="Swans">
-						</figure>
-					</li>
-					<li class="orbit-slide">
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="http://localhost/opticron/wp-content/uploads/2020/02/50-years.jpg" alt="50 Years">
-						</figure>
-					</li>
-				</ul>
 			</div>
 
 			<nav class="orbit-bullets">
@@ -51,9 +53,8 @@ get_header(); ?>
 				<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
 			</nav>
 		</div>
-	</div>		
-
-	<br><br><br><br>		
+	</div>
+	
 		
 	<div class="content">
 

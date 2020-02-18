@@ -38,36 +38,38 @@
 			
 	<body <?php body_class(); ?>>
 		<header class="header" role="banner">
-		<div class="top-bar">
-			<div class="top-bar-left">
-				<img src="wp-content/themes/JointsWP-CSS-master/assets/images/header-logo.png" alt="Opticron">
+			<div class="top-bar">
+				<div class="top-bar-left">
+					<img src="wp-content/themes/JointsWP-CSS-master/assets/images/header-logo.png" alt="Opticron">
+				</div>
 			</div>
-		</div>
-		<div class="top-bar">
-			
-			<div class="top-bar-left">
-				<ul class="menu">
-				<li><a href="#">Our Products</a></li>
-				<li><a href="#">Where to Buy</a></li>
-				<li><a href="#">News & Reviews</a></li>
-				<li><a href="#">Help & Support</a></li>
-				<li><a href="#">My Opticron</a></li>
-				</ul>
-			</div>
-			<div class="top-bar-right">
-				<form>
-					<div class="row collapse">
-						<div class="large-9 columns">
-							<input type="search" placeholder="My Opticron...">
+			<div class="top-bar">
+				
+				<div class="top-bar-left">
+					<ul class="menu">
+					<li><a href="#">Our Products</a></li>
+					<li><a href="#">Where to Buy</a></li>
+					<li><a href="#">News & Reviews</a></li>
+					<li><a href="#">Help & Support</a></li>
+					<li><a href="#">My Opticron</a></li>
+					</ul>
+				</div>
+				<div class="top-bar-right">
+					<form>
+						<div class="row collapse">
+							<div class="large-9 columns">
+								<input type="search" placeholder="My Opticron...">
+							</div>
+							<div class="large-3 columns">
+								<span class="postfix"><i class="fa fa-search"></i></span>
+							</div>
 						</div>
-						<div class="large-3 columns">
-							<span class="postfix"><i class="fa fa-search"></i></span>
-						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
-		</div>
 			
+				
+
 		</header> <!-- end .header -->
 
 		
